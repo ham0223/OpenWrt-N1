@@ -1,11 +1,6 @@
 
 # 云编译 OpenWrt-N1 固件
 
-**更新日志**
-- 20230226 第一版
-- 20230303 取消旁路由模式下的桥接，添加防火墙参数的自定义。
-- 20230306 以后的更新日志不发布在由此，见Releases下的固件更新说明。
-
 说明：
 - 本项目使用 Github Actions 下载 [Lean](https://github.com/coolsnowwolf/lede) 的 `Openwrt` 源码仓库，进行云编译。
 - 本项目看心情更新。想要自己编译，直接Fork后，修改XX.config 跟 xx.yml 文件即可。
