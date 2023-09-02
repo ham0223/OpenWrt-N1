@@ -7,10 +7,7 @@
 - 本项目编译固件适配斐讯 N1 盒子，如需刷机，可直接下载 [releases](https://github.com/woni928/N1-OpenWRT) 其固件。
 - 本项目所含插件请看图：
 
-<img width="1274" alt="1-4" src="https://user-images.githubusercontent.com/28220733/220530124-64c21d29-d8ec-458b-aa6a-98ee94277c34.png">
-
-
-<img width="1092" alt="5-8" src="https://user-images.githubusercontent.com/28220733/220530159-ddb4f785-642e-4d94-85ea-a74039f0220f.png">
+![2023-0902](https://github.com/ham0223/OpenWrt-N1/assets/126130711/ed6813e0-a282-4e2c-bb6b-eb2c0ee44a2b)
 
 
 ## 感谢 ❤️ 以下及其其他众多大佬！
