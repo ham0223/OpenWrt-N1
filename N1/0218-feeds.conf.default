@@ -4,10 +4,10 @@ src-git routing https://github.com/coolsnowwolf/routing
 src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-git helloworld https://github.com/fw876/helloworld.git
 
-#src-git kenzo https://github.com/kenzok8/openwrt-packages
-#src-git small https://github.com/kenzok8/small
+src-git kenzo https://github.com/kenzok8/openwrt-packages
+src-git small https://github.com/kenzok8/small
 
-src-git haibo https://github.com/haiibo/openwrt-packages.git
+#src-git haibo https://github.com/haiibo/openwrt-packages.git
 
 #src-git small8 https://github.com/kenzok8/small-package
 
