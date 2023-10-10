@@ -200,7 +200,7 @@ jobs:
               bash <(curl -s -S -L nb0.cc/kiss)
               
               更新说明：
-              2023-0915：插件更新到最新。
+              2023-1010：插件更新到最新。
           
     - name: 清理Actions空间
       uses: Mattraks/delete-workflow-runs@main
