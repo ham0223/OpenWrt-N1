@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: N1-5.4.X-my-1.2.1
+name: N1-5.4.X-my-1.2
 
 on:
   repository_dispatch:
@@ -21,7 +21,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: N1/0218-feeds.conf.default
-  CONFIG_FILE: N1/0821-my-1.1.config
+  CONFIG_FILE: N1/0821-my-1.2.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
@@ -171,7 +171,7 @@ jobs:
       uses: unifreq/openwrt_packit@master
       env:
         WHOAMI: ham
-        OPENWRT_VER: R23.7.7
+       # OPENWRT_VER: R23.7.7
         OPENWRT_ARMVIRT: openwrt-armvirt/*.tar.gz
         PACKAGE_SOC: s905d
         KERNEL_AUTO_LATEST: true
@@ -200,7 +200,7 @@ jobs:
               bash <(curl -s -S -L nb0.cc/kiss)
               
               更新说明：
-              2023-1010：插件更新到最新。
+              2024-0122：passwall插件全选，同步上游更新。
           
     - name: 清理Actions空间
       uses: Mattraks/delete-workflow-runs@main
