@@ -26,5 +26,5 @@ sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_gener
 # 临时修复acpid,aliyundrive-webdav,xfsprogs,perl-html-parser 导致的编译失败问题
 #sed -i 's#flto#flto -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/acpid/Makefile
 #sed -i 's/stripped/release/g' feeds/packages/multimedia/aliyundrive-webdav/Makefile
-sed -i 's#SYNC#SYNC -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/xfsprogs/Makefile
-sed -i 's/REENTRANT -D_GNU_SOURCE/LARGEFILE64_SOURCE/g' feeds/packages/lang/perl/perlmod.mk
+#sed -i 's#SYNC#SYNC -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/xfsprogs/Makefile
+#sed -i 's/REENTRANT -D_GNU_SOURCE/LARGEFILE64_SOURCE/g' feeds/packages/lang/perl/perlmod.mk
