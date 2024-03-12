@@ -23,8 +23,9 @@ sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_gener
 # 2023-08-29 aliyundrive-webdav 编译报错回滚到2.2.1
 #curl -o ./feeds/packages/multimedia/aliyundrive-webdav/Makefile https://raw.githubusercontent.com/Jason6111/OpenWrt_Personal/main/other/aliyun/Makefile
 
-# 临时修复acpid,aliyundrive-webdav,xfsprogs,perl-html-parser 导致的编译失败问题
+# 临时修复acpid,aliyundrive-webdav,xfsprogs,perl-html-parser,toplevel.mk 导致的编译失败问题
 #sed -i 's#flto#flto -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/acpid/Makefile
 #sed -i 's/stripped/release/g' feeds/packages/multimedia/aliyundrive-webdav/Makefile
 #sed -i 's#SYNC#SYNC -D_LARGEFILE64_SOURCE#g' feeds/packages/utils/xfsprogs/Makefile
 sed -i 's/REENTRANT -D_GNU_SOURCE/LARGEFILE64_SOURCE/g' feeds/packages/lang/perl/perlmod.mk
+sed -i 's/PKG_USE_MIPS16/PKG_BUILD_FLAGS:=no-mips16\nPKG_USE_MIPS16/' feeds/helloworld/v2ray-plugin/Makefile
