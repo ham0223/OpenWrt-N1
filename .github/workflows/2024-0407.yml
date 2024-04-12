@@ -199,7 +199,7 @@ jobs:
               bash <(curl -s -S -L nb0.cc/kiss)
               
               更新说明：
-              2024-0407：增加passwall2。
+              2024-0412：+passwall2+socat,添加三个翻墙插件全部依赖。
 
     - name: 清理Actions空间
       uses: Mattraks/delete-workflow-runs@main
