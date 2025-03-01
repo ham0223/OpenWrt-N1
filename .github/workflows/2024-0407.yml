@@ -176,7 +176,8 @@ jobs:
         PACKAGE_SOC: s905d
         KERNEL_AUTO_LATEST: true
        # KERNEL_REPO_URL: https://github.com/ham0223/OpenWRT-N1/tree/main/opt
-        KERNEL_VERSION_NAME: 5.4._6.1.
+        KERNEL_REPO_URL: breakingbadboy/OpenWrt
+        KERNEL_VERSION_NAME: 5.4._6.6.
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         
     - name: 整理文件
@@ -199,7 +200,8 @@ jobs:
               bash <(curl -s -S -L nb0.cc/kiss)
               
               更新说明：
-              2024-0413:+passwall2+socat,添加三个翻墙插件全部依赖.
+              2024-0413:+passwall2+socat,并添加三个翻墙插件全部依赖.
+              2025-0301:更改主机名，升级6.6内核。
 
     - name: 清理Actions空间
       uses: Mattraks/delete-workflow-runs@main
