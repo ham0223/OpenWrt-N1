@@ -10,8 +10,13 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
+# Modify default IP 
 sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/luci2/bin/config_generate
+
+# 修改主机名
+sed -i 's/LEDE/OpenWrt/g' package/base-files/files/bin/config_generate
+#sed -i 's/LEDE/OpenWrt/g' package/base-files/luci2/bin/config_generate
 
 # 增加 alist （在 ./scripts/feeds install -a 操作之后更换 golang 版本）
 #rm -rf feeds/packages/lang/golang
