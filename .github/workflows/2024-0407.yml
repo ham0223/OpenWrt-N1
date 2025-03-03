@@ -201,7 +201,7 @@ jobs:
               
               更新说明：
               2024-0413:+passwall2+socat,并添加三个翻墙插件全部依赖.
-              2025-0301:更改主机名，升级6.6内核。
+              2025-0303:更改主机名，升级6.6内核。
 
     - name: 清理Actions空间
       uses: Mattraks/delete-workflow-runs@main
